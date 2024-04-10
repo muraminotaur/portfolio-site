@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Slagle Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/532218c47f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header projects">
+        <div class="container">
+            <nav>
+                <img src="media/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+<!-- --------------- projects page --------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="project-row" id="pethaven">
+            <div class="project-col-1">
+                <img src="media/work1.png" class="project-media">
+            </div>
+            <div class="project-col-2">
+                <h2>PetHaven Project</h2>
+                <p>
+                    Our goal for this project was to create a web application 
+                    to collect donations for a generic non-profit client. 
+                    The PetHaven web application is written in Java and JavaScript 
+                    using Spring Boot, Maven, and Stripe API.
+                </p>
+                <a href="https://github.com/muraminotaur/PetHaven-Capstone" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </div>
+        <div class="project-row" id="virtualmemory">
+            <div class="project-col-1">
+                <img src="media/work2.png" class="project-media">
+            </div>
+            <div class="project-col-2">
+                <h2>Virtual Memory Implementation</h2>
+                <p>
+                    Operating Systems group project where we were tasked to implement 
+                    virtual memory on a rudimentary operating system, Nachos. This project 
+                    was written in C/C++ on Ubuntu Linux through VirtualBox.
+                </p>
+                <a href="https://github.com/muraminotaur/Virtual-Memory-Project" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

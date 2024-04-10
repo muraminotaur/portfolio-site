@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Slagle Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/532218c47f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="media/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#specialties">Specialties</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Jacob Slagle</span><br>from Broussard, LA</h1>
+            </div>
+        </div>
+    </div>
+<!-------------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="media/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>I graduated from ULL in 2023 with a Bachelor's in Computer Science. I've worked on projects concerning web applications, 
+                    algorithm design, operating systems, database management, and compiler design. I have experience working in both Agile and Scrum environments,
+                    as well as experience using Java, Python, SQL, HTML/CSS, and JavaScript. 
+                    More details on my application developing experience is listed in my <a href="#contact">resume</a>.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Java, Python, C++, SQL, HTML, CSS, JavaScript (ES6+)</li>
+                        <li><span>Developer Tools</span><br>SpringBoot, Maven, Docker, Cypress.io, Hibernate, Amazon EC2</li>
+                        <li><span>Project Management Tools</span><br>Git, Bitbucket, Confluence, Jira, Agile/Scrum</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Team Lead for PetHaven Web Application</li>
+                        <li><span>2022</span><br>Software Engineer Intern for Unknown Cyber Inc.</li>
+                        <li><span>2022</span><br>Backend Developer for Django Web Application Project</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018 - 2023</span><br>B.S. in Computer Science from University of Louisiana at Lafayette</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------- specialties -------------- -->
+<div id="specialties">
+    <div class="container">
+        <h1 class="subtitle">My Specialties</h1>
+        <div class="specialties-list">
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>Software Development</h2>
+                <p>
+                    From peer-to-peer encrypted messaging applications 
+                    to programming language interpreters, I always prioritize 
+                    writing well documented and easily maintainable codebases.
+                </p>
+                <a href="/projects.html">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>QA Testing & Test Automation</h2>
+                <p>
+                    During my internship at Unknown Cyber, Inc. I was tasked with 
+                    writing automated tests in Cypress.io to test UI consistency and authorization.
+                    This experience has given me a better understanding of potential areas 
+                    of failure in web applications, and how those mistakes can be 
+                    identified and prevented.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------- portfolio --------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+                <div class="work">
+                <img src="media/work1.png">
+                <div class="layer">
+                    <h3>PetHaven</h3>
+                    <p>
+                        Web application written in Java using Spring 
+                        framework for my senior capstone project.
+                    </p>
+                    <a href="/projects.html#pethaven"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="media/work2.png">
+                <div class="layer">
+                    <h3>Virtual Memory Implementation</h3>
+                    <p>
+                        Team project for an Operating Systems class 
+                        where we were tasked to implement virtual memory 
+                        on a very limited operating system from 1996, Nachos.
+                    </p>
+                    <a href="/projects.html#virtualmemory"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="media/work3.png">
+                <div class="layer">
+                    <h3>StereoSpace</h3>
+                    <p>
+                        Team project for exploring Agile/Scrum methodologies 
+                        as well as building a web application using Django and 
+                        deploying with Heroku.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="/projects.html" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------- contact --------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p class="email-box"><a href="mailto: jslagle621@gmail.com" target="_blank"><i class="fa-solid fa-paper-plane"></i> jslagle621@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jacob-slagle-352149238/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/muraminotaur" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="media/JacobSlagle-SoftwareEngineer-Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jacob. Made with <i class="fas fa-heart"></i>, HTML5, JavaScript, and CSS.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbytI1YsdI7y4eklBOhKJlevfaCsL3mfbjXJGvyVkFbRYpPn5MPCyMdmiEq_3WVrMImQzQ/exec'
+const form = document.forms['submit-to-google-sheet']
+
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+</html>
